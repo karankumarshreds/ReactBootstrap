@@ -22,7 +22,9 @@ function App() {
       <Jumbotron />
       {/* <_Grids /> */}
       {/* <_ListGroup /> */}
+      <br/><br/><br/>
       <CardsImage/>
+
     </div>
   );
 }

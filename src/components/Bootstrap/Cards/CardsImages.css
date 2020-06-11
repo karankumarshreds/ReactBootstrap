@@ -1,3 +1,6 @@
+.card-container {
+    width: 90vw !important;
+}
 .CardImages {
     user-select: none;
 }
@@ -6,10 +9,17 @@
 }
 .CardImages h1 {
     color: white;
+    font-size: 2.5rem;
+}
+.CardImages h1:hover {
+    color: #f16d55;
+}
+.CardImages .header-row {
     background-color: rgba(75, 73, 73, 0.445);
+    padding: 1rem;
 }
 .CardImages button {
-    font-size: 0.9rem;   
+    font-size: 1.2rem;   
     background-color: #f16d55;
     outline: none;
     border: none;
@@ -23,12 +33,16 @@
 .MainCard{
     box-shadow: 1px 0px 9px 0px rgba(0,0,0,0.55);
     border-radius: 0;
+    
 }
 .image{
     transition: all ease 200ms;
+    
 }
 .image:hover {
     transform: scale(1.1);box-shadow: 1px 0px 9px 0px rgba(0,0,0,0.55);
+    z-index: auto;
+    border-radius: 1rem;
 }
 .card-title {
     font-weight:400;
@@ -38,3 +52,4 @@
         font-size: 2rem;
     }
 }
+

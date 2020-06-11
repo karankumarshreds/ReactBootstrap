@@ -15,7 +15,7 @@ const Example = (props) => {
   return (
     <div className="Navbar">
       <Navbar expand="md">
-        <Navbar.Brand href="#home">HungerBox</Navbar.Brand>
+        <Navbar.Brand className="brandname" href="#home">HungerBox</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
@@ -23,7 +23,7 @@ const Example = (props) => {
             <Nav.Link href="#link">Register</Nav.Link>
             </Nav>
             <Form inline>
-            <FormControl type="text" placeholder="Search..." className="mr-sm-2 search" />
+            <FormControl type="text" placeholder="Search your favorite meals..." className="mr-sm-2 search" />
             <Nav.Link className="search-button">Kill hunger!</Nav.Link>
             </Form>
         </Navbar.Collapse>

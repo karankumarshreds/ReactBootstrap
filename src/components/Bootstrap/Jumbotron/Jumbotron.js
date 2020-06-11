@@ -18,7 +18,7 @@ const Jumbotron_ = () => {
                 Have our word and start ordering our delicious cuisines. </p>
                 </div>
                 <hr/>
-                <h5 >DON'T LET COVID-19 SCARE AWAY YOUR HUNGER :)</h5>
+                <h5 >DON'T LET COVID-19 SCARE AWAY YOUR HUNGER 😋</h5>
                 <div className="flip-box">
                   <div className="flip-box-inner">
                     <div className="flip-box-front">

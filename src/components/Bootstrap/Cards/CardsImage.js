@@ -11,15 +11,18 @@ import './CardsImages.css';
 const CardsImage = () => {
     const foods = [Chinese, Indian, American, Italian];
     const foodsNames = ['Chinese', 'Indian', 'American', 'Italian'];
-    for(let food of foods) {
-
-    }
+    const headingText = ['O','U','R',' ','U','N','I','Q','U','E',' ',
+                        'S','E','L','L','I','N','G',' ','P','O','I','N','T','S']
     return (
-        <div className="container my-5 CardImages">
-            <br/><br/><br/>
-            <h1 className="text-center display-3">Our Unique Selling Point</h1>
-            <br/><br/><br/>
-            <div className="row justify-content-center">
+        <div className="CardImages container-fluid">
+        <div className="row justify-content-center header-row">
+            <div className="col-6 text-center">
+            {headingText.map((each) => <h1 className="display-3 d-inline">{each}</h1>)}
+            </div>
+        </div>
+        <br/>
+        <div className="card-container container-fluid my-5 ">
+            <div className="row justify-content-between">
             {foods.map((food, i) => {
             return (
                 <div className="col-sm-6 col-lg-3 my-3">
@@ -28,9 +31,9 @@ const CardsImage = () => {
                     <Card.Body>
                         <Card.Title className="card-title">{foodsNames[i]}</Card.Title>
                         <Card.Text>
-                            <p>Our chefs make delicious {foodsNames[i]} cuisines..</p>
+                            <p className="mr-5">Our chefs make delicious {foodsNames[i]} cuisines..</p>
                         </Card.Text>
-                        <Button>Full {foodsNames[i]} menu</Button>
+                        <Button>{foodsNames[i]} menu</Button>
                     </Card.Body>
                 </Card>
                 </div>    
@@ -38,6 +41,7 @@ const CardsImage = () => {
             )
             })}
             </div>
+        </div>
         </div>
     )
         

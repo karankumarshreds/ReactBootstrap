@@ -9,20 +9,31 @@
     background-color: rgb(246, 124, 102) !important;
     outline: none !important;
     border-radius: 0 !important;
+    color: black;
+    width: 28rem !important;
+    height: 3rem !important;
+    font-size: 1.2rem !important;
 }
 .search:focus{
+    color: black;
     border-color: #ced4da;
     box-shadow: none;
-}
-.search::placeholder{
-    color: white !important;
+
 }
 
+.search::placeholder{
+    color: rgba(255, 255, 255, 0.644) !important;
+}
 .search-button {
-    transition: all ease 300ms;
+    transition: all ease 200ms;
+    font-size: 1.5rem;
+    border: 1px solid #f59281;
 }
 .search-button:hover{
     transform: scale(1.2);
     background-color: rgb(200, 98, 80);
+    border: none;
 }
-
+.brandname {
+    font-size: 2rem;
+}
