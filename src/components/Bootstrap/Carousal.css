@@ -1,0 +1,15 @@
+.Carousal {
+    background-color: #f16d55 !important;
+    height: 100vh !important;
+}
+/* img {
+    margin: auto;
+    width: 800px !important;
+} */
+#img1 {
+    margin-top: 2rem;
+    height: 80vh !important;
+    background-image: url("https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+}

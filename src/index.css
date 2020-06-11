@@ -1,5 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: #f16d55;
+    /* background-color: #8be8ff; */
 }
 

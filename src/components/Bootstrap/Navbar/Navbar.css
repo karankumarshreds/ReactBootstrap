@@ -1,0 +1,28 @@
+.Navbar {
+    background-color: #f16d55 !important;
+    padding: 1rem 1rem;
+}
+.Navbar a {
+    color: white !important;
+}
+.search {
+    background-color: rgb(246, 124, 102) !important;
+    outline: none !important;
+    border-radius: 0 !important;
+}
+.search:focus{
+    border-color: #ced4da;
+    box-shadow: none;
+}
+.search::placeholder{
+    color: white !important;
+}
+
+.search-button {
+    transition: all ease 300ms;
+}
+.search-button:hover{
+    transform: scale(1.2);
+    background-color: rgb(200, 98, 80);
+}
+

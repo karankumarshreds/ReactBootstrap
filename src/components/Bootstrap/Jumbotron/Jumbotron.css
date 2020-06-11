@@ -1,0 +1,112 @@
+.Jumbotron {
+    background-image: url("Donuts.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+}
+.Jumbotron-heading{
+    background-color: rgba(0, 0, 0, 0.54);
+    padding: 10px;
+}
+.Jumbotron-Text {
+    padding: 2rem 2rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.24);
+    transition: all ease 200ms;
+    /* margin-top: 3%; */
+}
+.Jumbotron-Text h5 {
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: rgb(29, 26, 26);
+}
+.Jumbotron-Text:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+}
+.Jumbotron-Text h1{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 760px) {
+    .Jumbotron {
+      height: 80vh;
+    }
+    .Jumbotron-heading {
+        font-size: 2.5rem;
+      }
+    .Jumbotron-Text {
+        font-size: 0.5rem;
+        padding: 1rem;
+        margin: 0;
+    }
+    .Jumbotron-Text p {
+        font-size: 0.9rem;
+    }
+    .flip-box {
+        display: flex;
+        align-self: center;
+    }  
+  }
+.Jumbotron .Button-front {
+    background-color:#f16d55;
+    /* background-color: #8be8ff !important; */
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 0;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+}
+.Jumbotron .Button-back {
+    background-color:#f16d55;
+    /* background-color: #8be8ff !important; */
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 0;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 130px;
+    height: 55px;
+    perspective: 1000px;
+  }
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    color: black;
+  }
+  
+  .flip-box-back {
+    color: white;
+    transform: rotateY(180deg);
+  }

@@ -5,13 +5,13 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
     typographyStyle: {
-        flex: 1
-    } 
+        flexGrow: 1
+    },
 })
 const Header = () => {
     const classes = useStyles();
     return(
-        <AppBar position="static">
+        <AppBar position="static" className={classes.nav}>
             <Toolbar>
                 <Typography className={classes.typographyStyle}>
                     TITLE
