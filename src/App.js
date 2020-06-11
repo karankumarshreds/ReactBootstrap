@@ -8,6 +8,8 @@ import Carousal from './components/Bootstrap/Carousal';
 import Jumbotron from './components/Bootstrap/Jumbotron/Jumbotron';
 import _Grids from './components/Bootstrap/Grids/Grids';
 import _ListGroup from './components/Bootstrap/ListGroups/ListGroup';
+import Cards from './components/Bootstrap/Cards/Cards';
+import CardsImage from './components/Bootstrap/Cards/CardsImage';
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
       <Jumbotron />
       {/* <_Grids /> */}
       {/* <_ListGroup /> */}
+      <CardsImage/>
     </div>
   );
 }
