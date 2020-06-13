@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Chinese from './Chinese1.jpg';
@@ -15,7 +16,7 @@ const CardsImage = () => {
                         'S','E','L','L','I','N','G',' ','P','O','I','N','T','S']
     return (
         <div className="CardImages container-fluid">
-        <div className="row justify-content-center header-row">
+        <div className="row justify-content-center align-items-center header-row">
             <div className="col-6 text-center">
             {headingText.map((each) => <h1 className="display-3 d-inline">{each}</h1>)}
             </div>
@@ -26,16 +27,31 @@ const CardsImage = () => {
             {foods.map((food, i) => {
             return (
                 <div className="col-sm-6 col-lg-3 my-3">
-                <Card className="MainCard">
-                <Card.Img className="image" variant="top" src={food}/>
-                    <Card.Body>
-                        <Card.Title className="card-title">{foodsNames[i]}</Card.Title>
-                        <Card.Text>
-                            <p className="mr-5">Our chefs make delicious {foodsNames[i]} cuisines..</p>
-                        </Card.Text>
-                        <Button>{foodsNames[i]} menu</Button>
-                    </Card.Body>
-                </Card>
+                    <div className="row justify-content-center">
+                    <div className="col-11">
+                    <Card className="MainCard">
+                    <Card.Img className="image" variant="top" src={food}/>
+                        <Card.Body>
+                            <Card.Title className="card-title">{foodsNames[i]}</Card.Title>
+                            <Card.Text>
+                                <p className="mr-5">Our chefs make delicious {foodsNames[i]} cuisines..</p>
+                            </Card.Text>
+                            <Button>
+                                <Link
+                                    activeClass="active"
+                                    to={foodsNames[i]}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                >
+                                    {foodsNames[i]} menu
+                                </Link>
+                            </Button>
+                        </Card.Body>
+                    </Card>
+                    </div>
+                    </div>
                 </div>    
             
             )

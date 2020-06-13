@@ -10,23 +10,29 @@
     outline: none !important;
     border-radius: 0 !important;
     color: black;
-    width: 28rem !important;
+    width: 24rem !important;
     height: 3rem !important;
     font-size: 1.2rem !important;
+}
+@media only screen and (max-width: 930px){
+    .search {
+        width: 18rem !important;
+    }
+    .search-button {
+        font-size: 0.4rem;
+    }
 }
 .search:focus{
     color: black;
     border-color: #ced4da;
     box-shadow: none;
-
 }
-
 .search::placeholder{
     color: rgba(255, 255, 255, 0.644) !important;
 }
 .search-button {
     transition: all ease 200ms;
-    font-size: 1.5rem;
+    font-size: 1.29rem;
     border: 1px solid #f59281;
 }
 .search-button:hover{

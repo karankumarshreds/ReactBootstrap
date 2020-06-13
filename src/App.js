@@ -10,7 +10,8 @@ import _Grids from './components/Bootstrap/Grids/Grids';
 import _ListGroup from './components/Bootstrap/ListGroups/ListGroup';
 import Cards from './components/Bootstrap/Cards/Cards';
 import CardsImage from './components/Bootstrap/Cards/CardsImage';
-
+import CheckForms from './components/Bootstrap/CheckForms/CheckForms';
+import Footer from './components/Bootstrap/Footer/Footer';
 function App() {
   return (
     <div className="App">
@@ -24,7 +25,9 @@ function App() {
       {/* <_ListGroup /> */}
       <br/><br/><br/>
       <CardsImage/>
-
+      <br/><br/>
+      <CheckForms />
+      <Footer />
     </div>
   );
 }

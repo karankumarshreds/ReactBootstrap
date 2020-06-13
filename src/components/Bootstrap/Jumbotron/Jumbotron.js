@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
 import './Jumbotron.css';
@@ -8,9 +8,18 @@ const Jumbotron_ = () => {
   const bgColorChange = () => {
     bgColor = "red";
   }
+  const jumbotronTextRef = useRef();
+  const mouseHandler = () => {
+    const width = jumbotronTextRef.Jumbotron-Text.clientWidth;
+    const height = jumbotronTextRef.Jumbotron-Text.clientHeight;
+    console.log(width, height)
+  }
   return (
           <Jumbotron className="Jumbotron">
-              <div className="container Jumbotron-Text">
+              <div className="container Jumbotron-Text"
+              onMouseMove={mouseHandler}
+              ref={jumbotronTextRef}
+              >
                 <h1 className="display-4 Jumbotron-heading">HYGIENE FIRST </h1>
                 {/* <p className="emoji d-inline">😇</p> */}
                 <div className="row">

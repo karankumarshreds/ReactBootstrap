@@ -10,13 +10,18 @@
 .CardImages h1 {
     color: white;
     font-size: 2.5rem;
+    font-weight: 400;
+    transition: all ease 100ms;
+    font-family: 'Rubik', sans-serif;
 }
 .CardImages h1:hover {
     color: #f16d55;
+    /* font-size: 3rem; */
 }
 .CardImages .header-row {
     background-color: rgba(75, 73, 73, 0.445);
     padding: 1rem;
+    /* height: 5rem; */
 }
 .CardImages button {
     font-size: 1.2rem;   
@@ -36,13 +41,15 @@
     
 }
 .image{
-    transition: all ease 200ms;
-    
+    transition: all ease 400ms;
+    opacity: 100%;
 }
 .image:hover {
-    transform: scale(1.1);box-shadow: 1px 0px 9px 0px rgba(0,0,0,0.55);
+    transform: scale(1.01);
+    box-shadow: 1px 0px 9px 0px rgba(0,0,0,0.55);
     z-index: auto;
-    border-radius: 1rem;
+    opacity: 98%;
+    /* border-radius: 1rem; */
 }
 .card-title {
     font-weight:400;
