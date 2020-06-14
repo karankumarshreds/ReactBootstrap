@@ -1,6 +1,7 @@
 .CheckForms {
     background-color: rgb(255, 255, 255);
-    padding: 3rem;
+    padding: 0;
+    /* margin: 0; */
     margin-bottom: 10rem;
     box-shadow: 1px 0px 9px 0px rgba(0,0,0,0.55);
     user-select: none;
@@ -17,7 +18,7 @@
     cursor: pointer;
 }
 .CheckForms .individual-row {
-    transition: all ease 200ms;
+    transition: all ease 100ms;
 }
 .CheckForms .individual-row:hover{
     background-color: rgb(244, 244, 244);
@@ -51,4 +52,7 @@
 .CheckForms button:hover {
     background-color: #ee5f46;
     box-shadow: 1px 0px 9px 0px rgba(0,0,0,0.5);
+}
+.scrollspy-contained {
+    width: 100% !important;
 }

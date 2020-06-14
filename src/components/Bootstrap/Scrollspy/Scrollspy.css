@@ -1,0 +1,12 @@
+.menu-nav {
+    background-color: #5f2323dc;
+    padding: 1rem 0 !important;
+    border-bottom: 1rem !important;
+}
+.nav-link.active {
+    background-color:#f16d55 !important;
+    border-radius: 0;
+}
+.menu-nav a {
+    color: white !important;
+}
